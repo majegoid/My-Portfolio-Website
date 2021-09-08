@@ -16,7 +16,15 @@
   padding: 0;
   border: 0;
 
-  background-color: hsl(0, 0%, 95%);
+  background-color: hsl(209, 100%, 13%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    135deg,
+    hsla(209, 100%, 50%, 100%) 0%,
+    hsla(209, 100%, 25%, 100%) 25%,
+    hsla(209, 100%, 25%, 100%) 100%
+  );
+  color: white;
   /* visibility: hidden; */
   /* opacity: 50%; */
 }
@@ -78,7 +86,8 @@
 }
 
 .nav a:hover {
-  background-color: hsl(0, 0%, 80%);
+  /* background-color: hsl(0, 0%, 80%); */
+  background: hsl(209, 100%, 50%);
 }
 
 .nav li.logo {
@@ -104,9 +113,20 @@
 
 .nav ul.right {
   flex-grow: 0;
-  justify-content: flex-end;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* justify-content: flex-end; */
+
+  min-width: 50px;
 
   /* background-color: magenta; */
+}
+
+.nav ul.right a:hover {
+  /* background-color: hsl(0, 0%, 80%); */
+  background-color: hsl(209, 100%, 50%);
 }
 
 .nav ul.right li {
@@ -114,7 +134,8 @@
   padding: 0;
   border: 0;
 
-  margin-right: 5px;
+  /* margin-right: 5px; */
+  /* background-color: lime; */
 }
 
 .nav li.divider {
@@ -126,4 +147,101 @@
   width: 2px;
 
   background-color: hsl(0, 0%, 80%);
+}
+
+.menuButton {
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+  /* margin-right: 15px; */
+}
+
+.mobileNavContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 50px;
+  left: 0;
+
+  height: auto;
+  width: 100%;
+
+  padding: 10px;
+
+  background-color: hsla(209, 100%, 25%, 100%);
+  /* background: linear-gradient(
+    135deg,
+    hsla(209, 100%, 50%, 100%) 0%,
+    hsla(209, 100%, 25%, 100%) 25%,
+    hsla(209, 100%, 25%, 100%) 100%
+  ); */
+  color: white;
+
+  /* background-color: magenta; */
+}
+
+.mobileNavContent ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: auto;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  /* background-color: red; */
+}
+
+.mobileNavContent li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 20%;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.mobileNavContent li a {
+  height: auto;
+  width: 100%;
+
+  margin: 0;
+  padding: 5px;
+  border: 0;
+  margin-bottom: 5px;
+
+  /* background-color: lime; */
+}
+
+.mobileNavContent hr {
+  width: 90%;
+
+  margin: 10px;
+  padding: 0;
+  border: 0;
+
+  height: 1px;
+
+  background-color: white;
+}
+
+.menuButton:hover {
+  background: hsl(209, 100%, 50%);
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
 }

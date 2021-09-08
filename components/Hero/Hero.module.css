@@ -19,7 +19,6 @@
   height: 250px;
   width: 100%;
 
-  font-size: 32px;
   font-weight: bold;
   color: white;
   background-color: hsla(0, 0%, 0%, 35%);
@@ -37,7 +36,7 @@
   height: 250px;
   width: 100%;
 
-  font-size: 32px;
+  font-size: 200vw;
   font-weight: bold;
 
   background-color: hsl(209, 100%, 13%);
@@ -52,4 +51,32 @@
 
 .hero h1 {
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 599px) {
+  .hero {
+    font-size: 5vw;
+    /* background-color: lime; */
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+  .hero {
+    font-size: 28px;
+    /* background-color: yellow; */
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1799px) {
+  .hero {
+    font-size: 32px;
+    /* background-color: orange; */
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .hero {
+    font-size: 32px;
+    /* background-color: magenta; */
+  }
 }

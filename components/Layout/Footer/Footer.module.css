@@ -10,7 +10,8 @@
 
   width: 100%;
 
-  background-color: hsl(0, 0%, 95%);
+  background-color: hsla(209, 100%, 15%);
+  color: white;
 }
 
 .footer a {
@@ -20,7 +21,8 @@
 }
 
 .footer a:hover {
-  background-color: hsl(0, 0%, 85%);
+  /* background-color: hsl(0, 0%, 85%); */
+  background-color: hsla(209, 100%, 50%);
 }
 
 .grid {
@@ -70,7 +72,9 @@
   border: 0;
 
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
+
+  margin-bottom: 5px;
   /* text-decoration: underline; */
 
   /* background-color: magenta; */

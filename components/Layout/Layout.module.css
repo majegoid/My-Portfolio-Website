@@ -3,13 +3,26 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  min-height: 100vh;
+
+  /* background-color: lime; */
 }
 
 .main {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
   margin-top: 50px;
 
   width: 100%;
   text-align: center;
+
+  /* background-color: red; */
 }
 
 @media (max-width: 600px) {
