@@ -9,7 +9,7 @@ const TopNavigation = () => {
     <nav className={styles.nav}>
       <ul>
         <li className={styles.logo}>
-          <Image src={'/favicon.ico'} width='40px' height='40px' />
+          <Image src={'/favicon.ico'} width='40px' height='40px' alt='Vercel Logo' />
           <span>My Portfolio</span>
         </li>
         <li className={styles.divider} />
