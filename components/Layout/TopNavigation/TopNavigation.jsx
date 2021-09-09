@@ -3,7 +3,7 @@ import Link from 'next/link';
 // import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import styles from './TopNavigation.module.css';
+import { nav, logo, divider, right, mobileNavContent, menuButton } from './TopNavigation.module.css';
 
 const TopNavigation = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -11,13 +11,15 @@ const TopNavigation = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   useEffect(() => {
-    window.addEventListener('resize', () => {
-      console.log(`width: ${window.innerWidth}`);
+    const handleMobileWidth = () => {
       setIsMobileWidth(window.innerWidth <= 600);
-    });
-    console.log(`width: ${window.innerWidth}`);
-    setIsMobileWidth(window.innerWidth <= 600);
+    };
+    window.addEventListener('resize', handleMobileWidth);
+    handleMobileWidth();
     setIsLoading(false);
+    return () => {
+      window.removeEventListener('resize', handleMobileWidth);
+    };
   }, []);
 
   const toggleMobileNavOpen = () => {
@@ -25,19 +27,19 @@ const TopNavigation = () => {
   };
 
   const desktopNavigation = (
-    <nav className={styles.nav}>
+    <nav className={nav}>
       <ul>
-        <li className={styles.logo}>
+        <li className={logo}>
           <FontAwesomeIcon icon={['fab', 'github']} size='2x' />
           <span>My Portfolio</span>
         </li>
-        <li className={styles.divider} />
+        <li className={divider} />
         <li>
           <Link href='/'>
             <a>Home</a>
           </Link>
         </li>
-        {/* <li className={styles.divider} /> */}
+        {/* <li className={divider} /> */}
         <li>
           <Link href='/about'>
             <a>About</a>
@@ -49,7 +51,7 @@ const TopNavigation = () => {
           </Link>
         </li>
       </ul>
-      <ul className={styles.right}>
+      <ul className={right}>
         {/* <li>
           <a href=''>My LinkedIn</a>
         </li> */}
@@ -61,20 +63,20 @@ const TopNavigation = () => {
   );
 
   const mobileNavigation = (
-    <nav className={styles.nav}>
+    <nav className={nav}>
       <ul>
-        <li className={styles.logo}>
+        <li className={logo}>
           <FontAwesomeIcon icon={['fab', 'github']} size='2x' />
           <span>My Portfolio</span>
         </li>
       </ul>
-      <ul className={styles.right}>
-        <li className={styles.menuButton}>
+      <ul className={right}>
+        <li className={menuButton}>
           <FontAwesomeIcon icon='bars' size='2x' onClick={toggleMobileNavOpen} />
         </li>
       </ul>
       {isMobileNavOpen && (
-        <div className={styles.mobileNavContent}>
+        <div className={mobileNavContent}>
           <ul>
             <li>
               <Link href='/'>
