@@ -1,13 +1,19 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
-import PlaceholderImage from '../../../public/bg.jpg';
+import PlaceholderImage from "../../../public/bg.jpg";
 
-import { project, image, content, meta, header } from './Project.module.css';
-import TechList from '../../TechList/TechList';
-import LinkList from '../../LinkList/LinkList';
+import { project, image, content, meta, header } from "./Project.module.css";
+import TechList from "../../TechList/TechList";
+import LinkList from "../../LinkList/LinkList";
 
-const Project = ({ title, description, linkContent, techContent }) => {
+const Project = ({
+  title,
+  description,
+  linkContent,
+  techContent,
+  imageSrc = "/bg.jpg",
+}) => {
   return (
     <div className={project}>
       <div className={header}>
@@ -16,12 +22,14 @@ const Project = ({ title, description, linkContent, techContent }) => {
       <div className={content}>
         <span className={image}>
           <Image
-            src={PlaceholderImage}
-            // layout='fill'
-            objectFit='cover'
-            placeholder='blur'
+            src={imageSrc}
+            // layout="fill"
+            objectFit="cover"
+            // placeholder="blur"
             priority
-            alt='Background image of transparent blue cube outlines on a black background at an angle.'
+            alt="Background image of transparent blue cube outlines on a black background at an angle."
+            height="180"
+            width="320"
           />
         </span>
         <p>

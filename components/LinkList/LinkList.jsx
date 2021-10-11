@@ -1,7 +1,7 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { links } from './LinkList.module.css';
+import { links } from "./LinkList.module.css";
 
 const LinkList = ({ linkContent }) => {
   const content = linkContent ? (
@@ -12,7 +12,7 @@ const LinkList = ({ linkContent }) => {
           if (icon) {
             return (
               <li key={text}>
-                <a href={href}>
+                <a href={href} rel="noreferrer" target="_blank">
                   <FontAwesomeIcon icon={icon} />
                   <span>{text}</span>
                 </a>
