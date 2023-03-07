@@ -1,4 +1,4 @@
-.container {
+.projectList {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,10 +10,6 @@
   height: 100%;
   width: 100%;
 
-  /* background-color: red; */
-}
-
-.projectList {
   display: grid;
   justify-items: center;
 
@@ -27,31 +23,8 @@
   padding-top: 15px;
   padding-bottom: 15px;
 
-  background-color: black;
+  background-color: transparent;
   color: white;
-}
-
-.viewButton {
-  height: 2em;
-  min-width: 2em;
-  margin: 0;
-  padding: 5px;
-  border: 0;
-  border-radius: 5px;
-
-  background: linear-gradient(135deg, hsla(209, 100%, 50%, 100%) 0%, hsla(209, 100%, 25%, 100%) 100%);
-
-  font-size: 1em;
-
-  color: white;
-}
-
-.viewButton:hover {
-  background: hsl(209, 100%, 50%);
-}
-
-.viewButton span {
-  margin-right: 5px;
 }
 
 /* @media only screen and (max-width: 599px) {
