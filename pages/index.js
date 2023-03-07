@@ -2,11 +2,11 @@ import Hero from '../components/Hero/Hero';
 import Project from '../components/Projects/Project/Project';
 import ProjectsList from '../components/Projects/ProjectsList/ProjectsList';
 
-import { container } from '../styles/Home.module.css';
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
-    <div className={container}>
+    <div className={styles.container}>
       <Hero />
       <ProjectsList>
         <Project
