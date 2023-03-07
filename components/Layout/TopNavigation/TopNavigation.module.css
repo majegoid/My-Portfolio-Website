@@ -27,6 +27,8 @@
   color: white;
   /* visibility: hidden; */
   /* opacity: 50%; */
+
+  font-weight: bold;
 }
 
 .nav ul {

@@ -1,9 +1,16 @@
-import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
 // import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { nav, logo, divider, right, mobileNavContent, menuButton } from './TopNavigation.module.css';
+import {
+  divider,
+  logo,
+  menuButton,
+  mobileNavContent,
+  nav,
+  right,
+} from './TopNavigation.module.css';
 
 const TopNavigation = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -36,7 +43,7 @@ const TopNavigation = () => {
         <li className={divider} />
         <li>
           <Link href='/'>
-            <a>Home</a>
+            <a>Best Projects</a>
           </Link>
         </li>
         {/* <li className={divider} /> */}
@@ -72,7 +79,11 @@ const TopNavigation = () => {
       </ul>
       <ul className={right}>
         <li className={menuButton}>
-          <FontAwesomeIcon icon='bars' size='2x' onClick={toggleMobileNavOpen} />
+          <FontAwesomeIcon
+            icon='bars'
+            size='2x'
+            onClick={toggleMobileNavOpen}
+          />
         </li>
       </ul>
       {isMobileNavOpen && (
@@ -100,7 +111,10 @@ const TopNavigation = () => {
               <a href=''>My LinkedIn</a>
             </li> */}
             <li>
-              <a style={{ marginBottom: '0px' }} href='https://github.com/walsworthdrew96'>
+              <a
+                style={{ marginBottom: '0px' }}
+                href='https://github.com/walsworthdrew96'
+              >
                 My GitHub
               </a>
             </li>

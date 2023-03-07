@@ -1,8 +1,8 @@
-import React, { useState, useRef } from 'react';
 import Head from 'next/head';
+import React from 'react';
 
-import TopNavigation from './TopNavigation/TopNavigation';
 import Footer from './Footer/Footer';
+import TopNavigation from './TopNavigation/TopNavigation';
 // import Scrollbar from '../UI/Scrollbar/Scrollbar';
 
 import { container, main } from './Layout.module.css';
