@@ -6,7 +6,8 @@
 
   min-height: 100vh;
 
-  /* background-color: lime; */
+  background: url('../../public/bg.jpg');
+  background-size: 100%;
 }
 
 .main {
@@ -21,8 +22,6 @@
 
   width: 100%;
   text-align: center;
-
-  /* background-color: red; */
 }
 
 @media (max-width: 600px) {

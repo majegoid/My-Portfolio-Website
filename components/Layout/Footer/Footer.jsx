@@ -20,7 +20,7 @@ const Footer = () => {
           <ul className={styles.anchorList}>
             <li>
               <Link href='/'>
-                <a>Home</a>
+                <a>My Best Projects</a>
               </Link>
             </li>
             <li>

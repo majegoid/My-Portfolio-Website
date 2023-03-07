@@ -6,16 +6,13 @@
 
   width: 100%;
   /* max-width: 600px; */
-
   margin: 0;
   padding: 0;
   border: 0;
   padding: 15px;
   border-radius: 5px;
 
-  background-color: hsl(209, 100%, 15%);
-
-  /* background-color: hsla(209, 100%, 25%, 100%); */
+  background-color: hsla(209, 100%, 25%, 50%);
 }
 
 .project > *,
@@ -39,8 +36,6 @@
   width: 100%;
 
   margin-bottom: 15px;
-
-  /* background-color: lime; */
 }
 
 .project h4 {
@@ -55,8 +50,6 @@
   width: 100%;
 
   margin-bottom: 15px;
-
-  /* background-color: lime; */
 }
 
 .header {
@@ -77,8 +70,6 @@
   flex-grow: 1;
 
   margin-bottom: 15px;
-
-  /* background-color: red; */
 }
 
 .content .image {
@@ -92,8 +83,6 @@
   min-height: 256px;
   min-width: 50%;
   height: 100%;
-
-  /* background-color: magenta; */
 }
 
 .content p {
@@ -108,8 +97,6 @@
   width: 100%;
 
   text-align: left;
-
-  /* background-color: lime; */
 }
 
 .meta {
@@ -122,8 +109,6 @@
   margin: 0;
   padding: 0;
   border: 0;
-
-  /* background-color: purple; */
 }
 
 @media only screen and (max-width: 599px) {
