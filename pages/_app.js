@@ -3,19 +3,32 @@ import '../styles/globals.css';
 
 import { config, library } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
-import { faEye, faEyeSlash, faGlobe, faBars } from '@fortawesome/free-solid-svg-icons';
-// import { far } from '@fortawesome/free-regular-svg-icons';
-import { faGithub, faReact, faCss3 } from '@fortawesome/free-brands-svg-icons';
+import {
+  faBars,
+  faCube,
+  faEye,
+  faEyeSlash,
+  faGlobe,
+} from '@fortawesome/free-solid-svg-icons';
+import {
+  faCss3,
+  faGithub,
+  faHtml5,
+  faJs,
+  faReact,
+} from '@fortawesome/free-brands-svg-icons';
 config.autoAddCss = false;
-library.add(faEye, faEyeSlash, faGlobe, faBars, faGithub, faReact, faCss3);
-
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-{
-  /*
-  <FontAwesomeIcon icon={fasCoffee} />
-  <FontAwesomeIcon icon={['fab', 'github']} size='2x' />
-  */
-}
+library.add(
+  faEye,
+  faEyeSlash,
+  faGlobe,
+  faBars,
+  faGithub,
+  faReact,
+  faCss3,
+  faHtml5,
+  faJs,
+);
 
 function MyApp({ Component, pageProps }) {
   return (
