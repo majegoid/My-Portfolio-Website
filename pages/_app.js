@@ -4,19 +4,19 @@ import '../styles/globals.css';
 import { config, library } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import {
-  faBars,
-  faCube,
-  faEye,
-  faEyeSlash,
-  faGlobe,
-} from '@fortawesome/free-solid-svg-icons';
-import {
   faCss3,
   faGithub,
   faHtml5,
   faJs,
   faReact,
 } from '@fortawesome/free-brands-svg-icons';
+import {
+  faBars,
+  faCube,
+  faEye,
+  faEyeSlash,
+  faGlobe,
+} from '@fortawesome/free-solid-svg-icons';
 config.autoAddCss = false;
 library.add(
   faEye,
@@ -28,6 +28,7 @@ library.add(
   faCss3,
   faHtml5,
   faJs,
+  faCube
 );
 
 function MyApp({ Component, pageProps }) {
