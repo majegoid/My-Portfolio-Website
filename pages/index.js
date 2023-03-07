@@ -86,7 +86,6 @@ export default function Home() {
           imageSrc={'/todo_list_app.png'}
         />
       </ProjectsList>
-      {/* <div>odds and ends</div> */}
     </div>
   );
 }
