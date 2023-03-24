@@ -20,4 +20,44 @@ export const projectsDataList = [
     tags: ['html', 'css', 'js', 'webpack'],
     imageSrc: '/todo_list_app.png',
   },
+  {
+    title: 'Todo List',
+    description: 'Todo List using a custom webpack setup.',
+    links: {
+      visit: 'https://majegoid.github.io/todo-list/',
+      source: 'https://github.com/majegoid/todo-list',
+    },
+    tags: ['html', 'css', 'js', 'webpack'],
+    imageSrc: '/todo_list_app.png',
+  },
+  {
+    title: 'Todo List',
+    description: 'Todo List using a custom webpack setup.',
+    links: {
+      visit: 'https://majegoid.github.io/todo-list/',
+      source: 'https://github.com/majegoid/todo-list',
+    },
+    tags: ['html', 'css', 'js', 'webpack'],
+    imageSrc: '/todo_list_app.png',
+  },
+  {
+    title: 'Todo List',
+    description: 'Todo List using a custom webpack setup.',
+    links: {
+      visit: 'https://majegoid.github.io/todo-list/',
+      source: 'https://github.com/majegoid/todo-list',
+    },
+    tags: ['html', 'css', 'js', 'webpack'],
+    imageSrc: '/todo_list_app.png',
+  },
+  {
+    title: 'Todo List',
+    description: 'Todo List using a custom webpack setup.',
+    links: {
+      visit: 'https://majegoid.github.io/todo-list/',
+      source: 'https://github.com/majegoid/todo-list',
+    },
+    tags: ['html', 'css', 'js', 'webpack'],
+    imageSrc: '/todo_list_app.png',
+  },
 ];

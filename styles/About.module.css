@@ -16,7 +16,6 @@
 
   /* background-color: hsla(209, 100%, 25%, 100%); */
   background-color: hsl(209, 100%, 15%);
-  /* background-color: lime; */
   color: white;
 }
 
@@ -36,16 +35,12 @@
   align-items: center;
 
   width: 100%;
-
-  /* background-color: red; */
 }
 
 .contactInfo > * {
   margin-bottom: 10px;
 
   width: 50%;
-
-  /* background-color: lime; */
 }
 
 @media (max-width: 600px) {
