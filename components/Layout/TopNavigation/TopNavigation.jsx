@@ -43,7 +43,7 @@ const TopNavigation = () => {
         <li className={divider} />
         <li>
           <Link href='/'>
-            <a>Best Projects</a>
+            <a>My Best Projects</a>
           </Link>
         </li>
         {/* <li className={divider} /> */}
