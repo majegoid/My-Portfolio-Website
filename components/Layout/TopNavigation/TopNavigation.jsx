@@ -63,7 +63,7 @@ const TopNavigation = () => {
           <a href=''>My LinkedIn</a>
         </li> */}
         <li style={{ marginRight: '5px' }}>
-          <a href='https://github.com/walsworthdrew96'>My GitHub</a>
+          <a href='https://github.com/majegoid'>My GitHub</a>
         </li>
       </ul>
     </nav>
@@ -113,7 +113,7 @@ const TopNavigation = () => {
             <li>
               <a
                 style={{ marginBottom: '0px' }}
-                href='https://github.com/walsworthdrew96'
+                href='https://github.com/majegoid'
               >
                 My GitHub
               </a>

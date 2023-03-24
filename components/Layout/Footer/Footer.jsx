@@ -11,7 +11,7 @@ const Footer = () => {
           <div className={styles.columnLabel}>Links</div>
           <ul className={styles.anchorList}>
             <li>
-              <a href='https://github.com/walsworthdrew96'>GitHub</a>
+              <a href='https://github.com/majegoid'>GitHub</a>
             </li>
           </ul>
         </div>
@@ -39,7 +39,7 @@ const Footer = () => {
           <div className={styles.columnLabel}>Links</div>
           <ul className={styles.anchorList}>
             <li>
-              <a href='https://github.com/walsworthdrew96'>GitHub</a>
+              <a href='https://github.com/majegoid'>GitHub</a>
             </li>
           </ul>
         </div>
