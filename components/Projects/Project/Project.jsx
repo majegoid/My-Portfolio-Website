@@ -2,16 +2,18 @@ import Image from 'next/image';
 import React from 'react';
 
 import LinkList from '../../LinkList/LinkList';
-import TechList from '../../TechList/TechList';
+import TagList from '../../TagList/TagList';
 import { content, header, image, meta, project } from './Project.module.css';
 
-const Project = ({
-  title,
-  description,
-  linkContent,
-  techContent,
-  imageSrc = '/bg.jpg',
-}) => {
+const Project = ({ projectData }) => {
+  const {
+    title,
+    description,
+    linkContent,
+    tags,
+    imageSrc = '/bg.jpg',
+  } = projectData;
+
   return (
     <div className={project}>
       <div className={header}>
@@ -21,9 +23,7 @@ const Project = ({
         <span className={image}>
           <Image
             src={imageSrc}
-            // layout="fill"
             objectFit='cover'
-            // placeholder="blur"
             priority
             alt='Background image of transparent blue cube outlines on a black background at an angle.'
             height='180'
@@ -41,7 +41,7 @@ const Project = ({
       </div>
       <div className={meta}>
         {linkContent && <LinkList linkContent={linkContent} />}
-        {techContent && <TechList techContent={techContent} />}
+        {tags && <TagList tagList={tags} />}
       </div>
     </div>
   );
