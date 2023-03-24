@@ -43,7 +43,6 @@ export default function Home() {
               text: 'React',
             },
             {
-              icon: ['fab', 'react'],
               // icon: '/next-js.svg',
               text: 'Next.js',
             },
