@@ -16,6 +16,7 @@ import {
   faEye,
   faEyeSlash,
   faGlobe,
+  faExternalLinkAlt
 } from '@fortawesome/free-solid-svg-icons';
 config.autoAddCss = false;
 library.add(
@@ -28,7 +29,8 @@ library.add(
   faCss3,
   faHtml5,
   faJs,
-  faCube
+  faCube,
+  faExternalLinkAlt
 );
 
 function MyApp({ Component, pageProps }) {

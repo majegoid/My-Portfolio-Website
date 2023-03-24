@@ -13,8 +13,7 @@
   width: 100%;
 
   list-style-type: none;
-
-  /* background-color: yellow; */
+  font-weight: bold;
 }
 
 .tech li {
@@ -22,7 +21,11 @@
   margin: 5px 5px 5px 0px;
   border-radius: 2px;
 
-  background: linear-gradient(135deg, hsla(209, 100%, 50%, 100%) 0%, hsla(209, 100%, 25%, 100%) 100%);
+  background: linear-gradient(
+    135deg,
+    hsla(209, 100%, 50%, 100%) 0%,
+    hsla(209, 100%, 25%, 100%) 100%
+  );
 }
 
 .tech li:hover {

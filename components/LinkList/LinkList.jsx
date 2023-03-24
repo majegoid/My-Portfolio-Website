@@ -1,12 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import styles from './LinkList.module.css';
 
-import { links } from './LinkList.module.css';
-
-const LinkList = ({ linkContent }) => {
+const LinkList = ({ links }) => {
   return (
-    <ul className={links}>
-      {linkContent.map(({ href, icon = ['fab', 'react'], text }) => (
+    <ul className={styles.linkList}>
+      {links.map(({ href, icon = ['fab', 'react'], text }) => (
         <li key={text}>
           <a href={href} rel='noreferrer' target='_blank'>
             <FontAwesomeIcon icon={icon} />
