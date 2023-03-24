@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 // import { scrollBar, slider } from './Scrollbar.module.css';
 
@@ -47,7 +47,7 @@ const Scrollbar = ({ containerRef, scrollComponent }) => {
     return () => {
       window.removeEventListener('wheel', handleScroll);
     };
-  }, []);
+  }, [minHeight, maxHeight]);
 
   let scrollBarOffsetY = 50;
   let scrollBarHeight = innerHeight - scrollBarOffsetY;

@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "NODE_OPTIONS='--openssl-legacy-provider' next dev",
-    "build": "NODE_OPTIONS='--openssl-legacy-provider' next build",
-    "start": "NODE_OPTIONS='--openssl-legacy-provider' next start",
-    "lint": "NODE_OPTIONS='--openssl-legacy-provider' next lint"
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
@@ -17,6 +17,7 @@
     "next": "^11.1.4",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "sharp": "^0.32.0",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
