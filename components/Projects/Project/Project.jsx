@@ -1,18 +1,16 @@
-import React from "react";
-import Image from "next/image";
+import Image from 'next/image';
+import React from 'react';
 
-import PlaceholderImage from "../../../public/bg.jpg";
-
-import { project, image, content, meta, header } from "./Project.module.css";
-import TechList from "../../TechList/TechList";
-import LinkList from "../../LinkList/LinkList";
+import LinkList from '../../LinkList/LinkList';
+import TechList from '../../TechList/TechList';
+import { content, header, image, meta, project } from './Project.module.css';
 
 const Project = ({
   title,
   description,
   linkContent,
   techContent,
-  imageSrc = "/bg.jpg",
+  imageSrc = '/bg.jpg',
 }) => {
   return (
     <div className={project}>
@@ -24,12 +22,12 @@ const Project = ({
           <Image
             src={imageSrc}
             // layout="fill"
-            objectFit="cover"
+            objectFit='cover'
             // placeholder="blur"
             priority
-            alt="Background image of transparent blue cube outlines on a black background at an angle."
-            height="180"
-            width="320"
+            alt='Background image of transparent blue cube outlines on a black background at an angle.'
+            height='180'
+            width='320'
           />
         </span>
         <p>
@@ -42,8 +40,8 @@ const Project = ({
         </p>
       </div>
       <div className={meta}>
-        <LinkList linkContent={linkContent} />
-        <TechList techContent={techContent} />
+        {linkContent && <LinkList linkContent={linkContent} />}
+        {techContent && <TechList techContent={techContent} />}
       </div>
     </div>
   );
