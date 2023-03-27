@@ -70,10 +70,8 @@ export const tagsDataList = [
   },
   {
     id: 'vercel',
-    icon: 'favicon.ico',
+    icon: 'vercel-favicon.svg',
     text: 'Vercel',
-    defaultColorFilterOff: true,
-    grayScaleFilter: true,
     groups: ['Hosting'],
   },
   {
