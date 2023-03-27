@@ -13,10 +13,10 @@ import {
 import {
   faBars,
   faCube,
+  faExternalLinkAlt,
   faEye,
   faEyeSlash,
   faGlobe,
-  faExternalLinkAlt
 } from '@fortawesome/free-solid-svg-icons';
 config.autoAddCss = false;
 library.add(
