@@ -1,16 +1,65 @@
+.iconWhiteColorFilter {
+  /* filter: invert(95%) sepia(100%) saturate(19%) hue-rotate(324deg)
+    brightness(104%) contrast(106%); */
+  filter: brightness(0%) saturate(100%) invert(95%) sepia(100%)
+    hue-rotate(324deg) contrast(106%);
+  /* filter: brightness(0%) saturate(100%) contrast(100%) invert(100%)
+    grayscale(100%); */
+}
+
+.iconGrayscaleColorFilter {
+  filter: grayscale(100%);
+}
+
+.projectFiltersContainer {
+  min-width: 512px;
+  /* width: 50%; */
+}
+
+.projectFilterGroupContainer {
+  display: grid;
+  grid-gap: 4px;
+  width: 100%;
+  grid-template-columns: repeat(3, minmax(fit-content, 1fr));
+}
+
+.projectFilterGroup {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 1rem;
+  min-width: 200px;
+  /* background-color: red; */
+}
+.projectFilterGroup h4 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.projectFilterGroup ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+}
+
+.projectFilterGroup h4,
+.projectFilterGroup ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 100px;
+}
+
 .projectFiltersStyle {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap;
-
   flex-grow: 1;
 
   margin: 0;
   padding: 0;
   border: 0;
-
-  width: 100%;
 
   list-style-type: none;
   font-weight: bold;
@@ -26,8 +75,10 @@
 }
 
 .projectFilterStyle {
+  display: flex;
+  gap: 4px;
+
   padding: 5px;
-  margin: 5px 5px 5px 0px;
   border-radius: 2px;
 
   background: linear-gradient(
@@ -44,10 +95,6 @@
 }
 
 .projectFilterStyle.active {
-  padding: 5px;
-  margin: 5px 5px 5px 0px;
-  border-radius: 2px;
-
   background: linear-gradient(
     135deg,
     hsla(105, 100%, 50%, 100%) 0%,
@@ -57,11 +104,6 @@
 }
 
 .projectFilterStyle.active:hover {
-  cursor: pointer;
-
   background: hsl(105, 100%, 50%);
-}
-
-.projectFilterStyle span {
-  margin-left: 5px;
+  cursor: pointer;
 }

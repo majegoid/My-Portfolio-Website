@@ -13,6 +13,7 @@ import {
 import {
   faBars,
   faCube,
+  faDatabase,
   faExternalLinkAlt,
   faEye,
   faEyeSlash,
@@ -30,7 +31,8 @@ library.add(
   faHtml5,
   faJs,
   faCube,
-  faExternalLinkAlt
+  faExternalLinkAlt,
+  faDatabase
 );
 
 function MyApp({ Component, pageProps }) {

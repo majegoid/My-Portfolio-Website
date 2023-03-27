@@ -1,0 +1,65 @@
+.iconWhiteColorFilter {
+  filter: brightness(0%) saturate(100%) invert(95%) sepia(100%)
+    hue-rotate(324deg) contrast(106%);
+}
+
+.iconGrayscaleColorFilter {
+  filter: grayscale(100%);
+}
+
+.tagListStyle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  list-style-type: none;
+  font-weight: bold;
+}
+
+.tagListStyle,
+.tagListStyle *,
+.tagListStyle *::before,
+.tagListStyle *::after {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.tagListItemStyle {
+  display: flex;
+  gap: 4px;
+
+  padding: 5px;
+  border-radius: 2px;
+
+  background: linear-gradient(
+    135deg,
+    hsla(209, 100%, 50%, 100%) 0%,
+    hsla(209, 100%, 25%, 100%) 100%
+  );
+}
+
+.tagListItemStyle:hover {
+  cursor: pointer;
+
+  background: hsl(209, 100%, 50%);
+}
+
+.tagListItemStyle.activeStyle {
+  background: linear-gradient(
+    135deg,
+    hsla(105, 100%, 50%, 100%) 0%,
+    hsla(105, 100%, 25%, 100%) 100%
+  );
+  background-color: green;
+}
+
+.tagListItemStyle.activeStyle:hover {
+  background: hsl(105, 100%, 50%);
+  cursor: pointer;
+}

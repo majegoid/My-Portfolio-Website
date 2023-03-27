@@ -7,7 +7,7 @@ export const projectsDataList = [
       visit: 'https://condescending-lovelace-7b872a.netlify.app/',
       source: 'https://github.com/majegoid/DGG-Remake',
     },
-    tags: ['cssmodules', 'js', 'react', 'next'],
+    tags: ['react', 'next', 'js', 'cssmodules', 'netlify'],
     imageSrc: '/dgg_snapshot.png',
   },
   {
@@ -17,7 +17,7 @@ export const projectsDataList = [
       visit: 'https://majegoid.github.io/todo-list/',
       source: 'https://github.com/majegoid/todo-list',
     },
-    tags: ['html', 'css', 'js', 'webpack'],
+    tags: ['webpack', 'js', 'html', 'css', 'local-storage', 'github-pages'],
     imageSrc: '/todo_list_app.png',
   },
 ];
