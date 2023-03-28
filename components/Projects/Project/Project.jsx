@@ -13,11 +13,12 @@ import {
   project,
 } from './Project.module.css';
 
-const Project = ({ projectData }) => {
+const Project = ({ projectIndex, projectData }) => {
   const { title, description, links, tags, imageSrc = '/bg.jpg' } = projectData;
 
   return (
     <div className={project}>
+      <h1>#{projectIndex + 1}</h1>
       <ul className={linkButtons}>
         <li key='visit-link'>
           <a href={links.visit} rel='noreferrer' target='_blank'>

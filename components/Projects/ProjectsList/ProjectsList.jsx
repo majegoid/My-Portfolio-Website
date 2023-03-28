@@ -17,7 +17,7 @@ const ProjectsList = ({ projectsDataList, projectFilters }) => {
       }
       return true;
     })
-    .map((pd) => <Project key={pd.title} projectData={pd} />);
+    .map((pd, index) => <Project key={pd.title} projectIndex={index} projectData={pd} />);
 
   return <div className={projectList}>{projectsJsx}</div>;
 };
