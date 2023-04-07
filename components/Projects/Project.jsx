@@ -1,25 +1,16 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import React from 'react';
+import { TagList } from '../Tags/TagList';
+import { LinkList } from './LinkList';
 
-import LinkList from '../../LinkList/LinkList';
-import TagList from '../../TagList/TagList';
-import {
-  content,
-  header,
-  image,
-  linkButtons,
-  meta,
-  project,
-} from './Project.module.css';
-
-const Project = ({ projectIndex, projectData }) => {
+export const Project = ({ projectIndex, projectData }) => {
   const { title, description, links, tags, imageSrc = '/bg.jpg' } = projectData;
 
   return (
-    <div className={project}>
+    <div className='project'>
       <h1>#{projectIndex + 1}</h1>
-      <ul className={linkButtons}>
+      <ul className='link-buttons'>
         <li key='visit-link'>
           <a href={links.visit} rel='noreferrer' target='_blank'>
             <FontAwesomeIcon icon={['fas', 'external-link-alt']} />
@@ -31,11 +22,11 @@ const Project = ({ projectIndex, projectData }) => {
           </a>
         </li>
       </ul>
-      <div className={header}>
+      <div className='header'>
         <h2>{title || `Project Title`}</h2>
       </div>
-      <div className={content}>
-        <span className={image}>
+      <div className='content'>
+        <span className='image'>
           <Image
             src={imageSrc}
             objectFit='cover'
@@ -54,12 +45,10 @@ const Project = ({ projectIndex, projectData }) => {
           est laborum.`}
         </p>
       </div>
-      <div className={meta}>
+      <div className='meta'>
         {links.otherLinks && <LinkList links={links.otherLinks} />}
         {tags && <TagList tagList={tags} />}
       </div>
     </div>
   );
 };
-
-export default Project;

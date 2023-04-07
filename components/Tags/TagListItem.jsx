@@ -2,12 +2,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 import Image from 'next/image';
 import React from 'react';
-import {
-  activeStyle,
-  iconGrayscaleColorFilter,
-  iconWhiteColorFilter,
-  tagListItemStyle
-} from './TagListItem.module.css';
 
 export const TagListItem = ({ tagData, onClick, active = false }) => {
   const {
@@ -25,8 +19,8 @@ export const TagListItem = ({ tagData, onClick, active = false }) => {
     <li
       key={id}
       className={classNames({
-        [tagListItemStyle]: true,
-        [activeStyle]: active,
+        ['tag-list-item']: true,
+        ['active']: active,
       })}
       onClick={onClick}
     >
@@ -49,8 +43,8 @@ export const TagListItem = ({ tagData, onClick, active = false }) => {
             objectFit='contain'
             alt={`Icon`}
             className={classNames({
-              [iconWhiteColorFilter]: !defaultColorFilterOff,
-              [iconGrayscaleColorFilter]: grayScaleFilter,
+              ['icon-white-color-filter']: !defaultColorFilterOff,
+              ['icon-grayscale-color-filter']: grayScaleFilter,
             })}
           />
         </span>

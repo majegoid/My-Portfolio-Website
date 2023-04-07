@@ -1,10 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import styles from './LinkList.module.css';
 
-const LinkList = ({ links }) => {
+export const LinkList = ({ links }) => {
   return (
-    <ul className={styles.linkList}>
+    <ul className='link-list'>
       {links.map(({ href, icon = ['fab', 'react'], text }) => (
         <li key={text}>
           <a href={href} rel='noreferrer' target='_blank'>
@@ -16,5 +15,3 @@ const LinkList = ({ links }) => {
     </ul>
   );
 };
-
-export default LinkList;

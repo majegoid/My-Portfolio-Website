@@ -1,23 +1,23 @@
 import React from 'react';
 
-import { contactInfo, main } from '../styles/About.module.css';
-
 const contact = () => {
   return (
-    <div className={main}>
-      <h1>Contact Information</h1>
+    <div className='text-page'>
+      <h1>Contact</h1>
+      <br />
       <p>
         I should be available <b>Weekdays (Monday-Friday) from 9am-5pm</b>. I am
         currently working every day to become a{` `}
         <b>React Developer</b>.
       </p>
+      <br />
       <p>
-        Feel free to shoot me an email if you have <b>business inquiries</b>. I
-        try to check it fairly often.
+        Feel free to shoot me an email if you would like help with paid web
+        devleopment work. I tend to check my emails fairly often.
       </p>
-
-      <h2>Contact Information</h2>
-      <div className={contactInfo}>
+      <br />
+      <div className='contact-info'>
+        <h2>Contact Information</h2>
         <b>
           <u>Email:</u> walsworth.drew96@gmail.com
         </b>

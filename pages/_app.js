@@ -1,5 +1,5 @@
-import Layout from '../components/Layout/Layout';
-import '../styles/globals.css';
+import { Layout } from '../components/Layout/Layout';
+import '../styles/index.css';
 
 import { config, library } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';

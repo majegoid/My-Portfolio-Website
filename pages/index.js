@@ -1,14 +1,10 @@
 import { useState } from 'react';
-import { ProjectFilters } from '../components/ProjectFilters/ProjectFilters';
-import ProjectsList from '../components/Projects/ProjectsList/ProjectsList';
-
+import { ProjectFilters } from '../components/Projects/ProjectFilters';
+import { ProjectsList } from '../components/Projects/ProjectsList';
 import { projectsDataList } from '../data/projectsDataList';
-import styles from '../styles/Home.module.css';
 
 export default function Home() {
   const [projectFilters, setProjectFilters] = useState([]);
-
-  console.log(projectFilters);
 
   // State Management
   const toggleProjectFilter = (projectFilterToToggle) => {
@@ -29,8 +25,8 @@ export default function Home() {
   };
 
   return (
-    <div className={styles.container}>
-      {/* <Hero /> */}
+    <>
+      <h1>Projects</h1>
       <ProjectFilters
         toggleProjectFilter={toggleProjectFilter}
         findProjectFilter={findProjectFilter}
@@ -39,6 +35,6 @@ export default function Home() {
         projectsDataList={projectsDataList}
         projectFilters={projectFilters}
       />
-    </div>
+    </>
   );
 }

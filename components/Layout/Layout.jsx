@@ -1,25 +1,25 @@
 import Head from 'next/head';
 import React from 'react';
+import { Footer } from './Footer';
+import { TopNavigation } from './TopNavigation';
 
-import Footer from './Footer/Footer';
-import TopNavigation from './TopNavigation/TopNavigation';
-// import Scrollbar from '../UI/Scrollbar/Scrollbar';
-
-import { container, main } from './Layout.module.css';
-
-const Layout = ({ children }) => {
+export const Layout = ({ children }) => {
   return (
-    <div className={container}>
+    <div className='layout-container'>
       <Head>
         <title>My Portfolio</title>
         <meta name='description' content='Work Portfolio by Drew Walsworth' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <TopNavigation />
-      <main className={main}>{children}</main>
+      <main>{children}</main>
+      {/* <main>
+        <div style={{ backgroundColor: 'red', width: '100%', height: '100%' }}>
+          FILL
+        </div>
+      </main> */}
+      {/* <main>No Content</main> */}
       <Footer />
     </div>
   );
 };
-
-export default Layout;
