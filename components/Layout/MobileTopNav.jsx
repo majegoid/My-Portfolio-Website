@@ -11,6 +11,9 @@ export const MobileTopNav = ({ isMobileNavOpen, toggleMobileNavOpen }) => {
       setIsAtTopOfPage(window.scrollY === 0);
     }
     window.addEventListener('scroll', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+    };
   }, []);
 
   return (
@@ -63,10 +66,24 @@ export const MobileTopNav = ({ isMobileNavOpen, toggleMobileNavOpen }) => {
           <hr />
           <ul>
             <li>
-              <a href=''>My LinkedIn</a>
+              <a
+                href='https://www.linkedin.com/in/drew-walsworth-5b277326b/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <FontAwesomeIcon icon={['fab', 'linkedin']} size='2x' />
+                My LinkedIn
+              </a>
             </li>
             <li>
-              <a href='https://github.com/majegoid'>My GitHub</a>
+              <a
+                href='https://github.com/majegoid'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <FontAwesomeIcon icon={['fab', 'github']} size='2x' />
+                My GitHub
+              </a>
             </li>
           </ul>
         </div>

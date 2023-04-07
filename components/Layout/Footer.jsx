@@ -8,7 +8,22 @@ export const Footer = () => {
         <h4>Links</h4>
         <ul className='anchor-list'>
           <li>
-            <a href='https://github.com/majegoid'>GitHub</a>
+            <a
+              href='https://github.com/majegoid'
+              target='_blank'
+              rel='noreferrer'
+            >
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a
+              href='https://github.com/majegoid'
+              target='_blank'
+              rel='noreferrer'
+            >
+              LinkedIn
+            </a>
           </li>
         </ul>
       </div>
@@ -36,7 +51,22 @@ export const Footer = () => {
         <h4>Links</h4>
         <ul className='anchor-list'>
           <li>
-            <a href='https://github.com/majegoid'>GitHub</a>
+            <a
+              href='https://github.com/majegoid'
+              target='_blank'
+              rel='noreferrer'
+            >
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a
+              href='https://github.com/majegoid'
+              target='_blank'
+              rel='noreferrer'
+            >
+              LinkedIn
+            </a>
           </li>
         </ul>
       </div>
