@@ -162,6 +162,11 @@ button span {
   min-width: 2.5rem;
   border-radius: 0.125rem;
 }
+.top-navigation li a {
+  display: flex;
+  gap: 0.25rem;
+  
+}
 .top-navigation li.logo span {
   height: 2.5rem;
 

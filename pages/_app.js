@@ -8,6 +8,7 @@ import {
   faGithub,
   faHtml5,
   faJs,
+  faLinkedin,
   faReact,
 } from '@fortawesome/free-brands-svg-icons';
 import {
@@ -32,7 +33,8 @@ library.add(
   faJs,
   faCube,
   faExternalLinkAlt,
-  faDatabase
+  faDatabase,
+  faLinkedin
 );
 
 function MyApp({ Component, pageProps }) {
