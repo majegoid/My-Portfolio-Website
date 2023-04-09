@@ -7,7 +7,7 @@ export const projectsDataList = [
       visit: 'https://condescending-lovelace-7b872a.netlify.app/',
       source: 'https://github.com/majegoid/DGG-Remake',
     },
-    tags: ['react', 'next', 'js', 'cssmodules', 'netlify'],
+    tags: ['react', 'next', 'js', 'css', 'netlify'],
     imageSrc: '/content/project-screenshots/dgg-remake-screenshot.png',
   },
   {
@@ -31,6 +31,17 @@ export const projectsDataList = [
     },
     tags: ['webpack', 'js', 'html', 'css', 'local-storage', 'github-pages'],
     imageSrc: '/content/project-screenshots/book-library-screenshot.png',
+  },
+  {
+    title: 'Example Personal Portfolio',
+    description:
+      'Portfolio website that I created following a mock design following The Odin Project.',
+    links: {
+      visit: 'https://majegoid.github.io/example-personal-portfolio/',
+      source: 'https://github.com/majegoid/example-personal-portfolio',
+    },
+    tags: ['react', 'create-react-app', 'js', 'css', 'github-pages'],
+    imageSrc: '/content/project-screenshots/example-personal-portfolio.png',
   },
   {
     title: 'Restaurant Page',
