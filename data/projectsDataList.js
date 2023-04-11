@@ -55,6 +55,17 @@ export const projectsDataList = [
     imageSrc: '/content/project-screenshots/restaurant-page-screenshot.png',
   },
   {
+    title: 'React Weather App',
+    description:
+      'React project I created while following along with the Weather App Project description of The Odin Project.',
+    links: {
+      visit: 'https://majegoid.github.io/react-weather-app/',
+      source: 'https://github.com/majegoid/react-weather-app',
+    },
+    tags: ['react', 'create-react-app', 'js', 'css', 'github-pages'],
+    imageSrc: '/content/project-screenshots/react-weather-app.png',
+  },
+  {
     title: 'Registration Form',
     description:
       'Registration Form that uses HTML5 Validation created following along with The Odin Project. Follows a mock design.',
