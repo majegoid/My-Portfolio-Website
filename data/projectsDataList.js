@@ -55,6 +55,17 @@ export const projectsDataList = [
     imageSrc: '/content/project-screenshots/restaurant-page-screenshot.png',
   },
   {
+    title: 'React Memory Card Game',
+    description:
+      'A React Memory Card Game that I made while following along with The Odin Project.',
+    links: {
+      visit: 'https://majegoid.github.io/react-memory-card-game/',
+      source: 'https://github.com/majegoid/react-memory-card-game',
+    },
+    tags: ['react', 'create-react-app', 'js', 'css', 'github-pages'],
+    imageSrc: '/content/project-screenshots/react-memory-card-game.png',
+  },
+  {
     title: 'React Weather App',
     description:
       'React project I created while following along with the Weather App Project description of The Odin Project.',
