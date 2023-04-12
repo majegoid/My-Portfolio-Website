@@ -33,6 +33,17 @@ export const projectsDataList = [
     imageSrc: '/content/project-screenshots/book-library-screenshot.png',
   },
   {
+    title: 'React Shopping Cart',
+    description:
+      'Shopping cart app I made while following along with The Odin Project.',
+    links: {
+      visit: 'https://majegoid.github.io/react-shopping-cart/',
+      source: 'https://github.com/majegoid/react-shopping-cart',
+    },
+    tags: ['react', 'create-react-app', 'js', 'css', 'github-pages'],
+    imageSrc: '/content/project-screenshots/react-shopping-cart.png',
+  },
+  {
     title: 'Example Personal Portfolio',
     description:
       'Portfolio website that I created following a mock design following The Odin Project.',
